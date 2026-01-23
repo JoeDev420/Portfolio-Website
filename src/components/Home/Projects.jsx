@@ -61,7 +61,7 @@ const Projects = () => {
           className="grid grid-cols-1 md:grid-cols-2 gap-10"
         >
 
-          {/* PROJECT 1 */}
+          
           <motion.div
             variants={cardVariants}
             className="bg-[#f1ede4] rounded-[28px] p-10 relative overflow-hidden flex flex-col min-h-[520px]"
@@ -87,7 +87,7 @@ const Projects = () => {
                 AI-driven keyword optimization and role-specific suggestions.
               </motion.p>
 
-              {/* Links */}
+ 
               <motion.div variants={itemVariants} className="mt-5 flex flex-col gap-2 text-[15px]">
                 <a
                   href="https://eazy-resume.vercel.app"
@@ -110,7 +110,6 @@ const Projects = () => {
             </motion.div>
           </motion.div>
 
-          {/* PROJECT 2 */}
           <motion.div
             variants={cardVariants}
             className="bg-[#f1ede4] rounded-[28px] p-10 relative overflow-hidden flex flex-col min-h-[520px]"
@@ -136,7 +135,6 @@ const Projects = () => {
                 admin controls.
               </motion.p>
 
-              {/* Links */}
               <motion.div variants={itemVariants} className="mt-5 flex flex-col gap-2 text-[15px]">
                 <a
                   href="https://go-cart-store-ten.vercel.app"
@@ -158,8 +156,7 @@ const Projects = () => {
             </motion.div>
           </motion.div>
 
-          {/* PROJECT 3 */}
-          {/* PROJECT 3 */}
+         
             <motion.div
               variants={cardVariants}
               className="bg-[#f1ede4] rounded-[28px] p-10 relative overflow-hidden flex flex-col min-h-[520px]"

@@ -38,7 +38,7 @@ const Bio = () => {
         className="w-[90%] max-w-[1300px] flex flex-col lg:flex-row overflow-hidden rounded-[32px] shadow-lg"
       >
 
-        {/* LEFT IMAGE */}
+  
         <motion.div
           variants={itemVariants}
           className="w-full lg:w-1/2 h-[500px] lg:h-auto relative bg-[#ece8df]"
@@ -47,7 +47,7 @@ const Bio = () => {
         <img src="/aboutme.jpeg" alt="Anant" className="w-full h-full object-cover" />
         </motion.div>
 
-        {/* RIGHT CONTENT */}
+      
         <motion.div
           variants={containerVariants}
           className="w-full lg:w-1/2 bg-[#3b372f] px-40 py-20 flex flex-col justify-center"

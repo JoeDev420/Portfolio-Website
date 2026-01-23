@@ -26,7 +26,7 @@ const itemVariants = {
   },
 };
 
-/* ---------------- ICONS ---------------- */
+
 
 const ResumeIcon = () => (
   <svg
@@ -66,9 +66,9 @@ const Footer = () => {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        {/* LEFT: SOCIAL LINKS */}
+        
         <div className="flex items-center gap-6">
-          {/* GitHub */}
+ 
           <motion.a
             variants={itemVariants}
             href="https://github.com/JoeDev420"
@@ -84,7 +84,6 @@ const Footer = () => {
             />
           </motion.a>
 
-          {/* LinkedIn */}
           <motion.a
             variants={itemVariants}
             href="https://www.linkedin.com/in/anant-singh-b33a93373/"
@@ -103,7 +102,7 @@ const Footer = () => {
           
         </div>
 
-        {/* RIGHT: TECH INFO */}
+       
         <motion.div
           variants={itemVariants}
           className="text-gray-500"
