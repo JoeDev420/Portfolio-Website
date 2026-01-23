@@ -40,7 +40,10 @@ const imageVariants = {
 
 const Projects = () => {
   return (
-    <section id="projects" className="w-full bg-[#faf9f6] flex justify-center py-28">
+    <section
+      id="projects"
+      className="w-full bg-[#faf9f6] flex justify-center py-20 sm:py-24 lg:py-28"
+    >
       <div className="w-[90%] max-w-[1300px]">
 
         <motion.h2
@@ -48,7 +51,7 @@ const Projects = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="text-[35px] tracking-[0.15em] text-black font-medium mb-12"
+          className="text-[28px] sm:text-[32px] lg:text-[35px] tracking-[0.15em] text-black font-medium mb-10 lg:mb-12 text-center lg:text-left"
         >
           PROJECTS
         </motion.h2>
@@ -58,37 +61,44 @@ const Projects = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-10"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10"
         >
 
-          
           <motion.div
             variants={cardVariants}
-            className="bg-[#f1ede4] rounded-[28px] p-10 relative overflow-hidden flex flex-col min-h-[520px]"
+            className="bg-[#f1ede4] rounded-[28px] p-6 sm:p-8 lg:p-10 relative overflow-hidden flex flex-col min-h-[480px] sm:min-h-[520px]"
           >
             <motion.img
               src="/mohit.png"
               alt="Resume Builder Preview"
               variants={imageVariants}
-              className="absolute right-[-100px] bottom-[-50px] w-[800px] h-[250px] rotate-[-15deg] pointer-events-none z-0 rounded-2xl"
+              className="absolute right-[-120px] bottom-[-60px] w-[650px] sm:w-[750px] lg:w-[800px] h-[220px] sm:h-[250px] rotate-[-15deg] pointer-events-none z-0 rounded-2xl"
             />
 
             <motion.div
               variants={contentVariants}
-              className="relative z-10 max-w-[480px] pb-[220px]"
+              className="relative z-10 max-w-[480px] pb-[200px] sm:pb-[220px]"
             >
-              <motion.h3 variants={itemVariants} className="text-[26px] font-semibold text-[#2d2b26] mb-3">
+              <motion.h3
+                variants={itemVariants}
+                className="text-[22px] sm:text-[24px] lg:text-[26px] font-semibold text-[#2d2b26] mb-3"
+              >
                 Resume Builder Platform
               </motion.h3>
 
-              <motion.p variants={itemVariants} className="text-[#4d4a43] text-[16px] leading-[2.3]">
+              <motion.p
+                variants={itemVariants}
+                className="text-[#4d4a43] text-[15px] sm:text-[16px] leading-[2.1] sm:leading-[2.3]"
+              >
                 Built and deployed a full-stack AI-powered resume builder that
                 analyzes resumes for ATS compatibility and enhances them using
                 AI-driven keyword optimization and role-specific suggestions.
               </motion.p>
 
- 
-              <motion.div variants={itemVariants} className="mt-5 flex flex-col gap-2 text-[15px]">
+              <motion.div
+                variants={itemVariants}
+                className="mt-5 flex flex-col gap-2 text-[14px] sm:text-[15px]"
+              >
                 <a
                   href="https://eazy-resume.vercel.app"
                   target="_blank"
@@ -112,30 +122,39 @@ const Projects = () => {
 
           <motion.div
             variants={cardVariants}
-            className="bg-[#f1ede4] rounded-[28px] p-10 relative overflow-hidden flex flex-col min-h-[520px]"
+            className="bg-[#f1ede4] rounded-[28px] p-6 sm:p-8 lg:p-10 relative overflow-hidden flex flex-col min-h-[480px] sm:min-h-[520px]"
           >
             <motion.img
               src="/go3.png"
               alt="Ecommerce Preview"
               variants={imageVariants}
-              className="absolute right-[-100px] bottom-[-50px] w-[550px] h-[290px] rotate-[-19deg] pointer-events-none z-0 rounded-2xl"
+              className="absolute right-[-120px] bottom-[-60px] w-[450px] sm:w-[500px] lg:w-[550px] h-[260px] sm:h-[290px] rotate-[-19deg] pointer-events-none z-0 rounded-2xl"
             />
 
             <motion.div
               variants={contentVariants}
-              className="relative z-10 max-w-[480px] pb-[220px]"
+              className="relative z-10 max-w-[480px] pb-[200px] sm:pb-[220px]"
             >
-              <motion.h3 variants={itemVariants} className="text-[26px] font-semibold text-[#2d2b26] mb-3">
+              <motion.h3
+                variants={itemVariants}
+                className="text-[22px] sm:text-[24px] lg:text-[26px] font-semibold text-[#2d2b26] mb-3"
+              >
                 Full-Stack Ecommerce Platform
               </motion.h3>
 
-              <motion.p variants={itemVariants} className="text-[#4d4a43] text-[16px] leading-[2.1]">
+              <motion.p
+                variants={itemVariants}
+                className="text-[#4d4a43] text-[15px] sm:text-[16px] leading-[2.1]"
+              >
                 A production-ready ecommerce website with authentication,
                 product catalog, cart & checkout flow, secure payments, and
                 admin controls.
               </motion.p>
 
-              <motion.div variants={itemVariants} className="mt-5 flex flex-col gap-2 text-[15px]">
+              <motion.div
+                variants={itemVariants}
+                className="mt-5 flex flex-col gap-2 text-[14px] sm:text-[15px]"
+              >
                 <a
                   href="https://go-cart-store-ten.vercel.app"
                   target="_blank"
@@ -147,8 +166,8 @@ const Projects = () => {
 
                 <a
                   href="https://github.com/JoeDev420/gocart_Ecommerce_Store"
-                  className="font-semibold text-[#6b5c3d] hover:underline"
                   target="_blank"
+                  className="font-semibold text-[#6b5c3d] hover:underline"
                 >
                   GitHub Repo →
                 </a>
@@ -156,41 +175,39 @@ const Projects = () => {
             </motion.div>
           </motion.div>
 
-         
+          <motion.div
+            variants={cardVariants}
+            className="bg-[#f1ede4] rounded-[28px] p-6 sm:p-8 lg:p-10 relative overflow-hidden flex flex-col min-h-[480px] sm:min-h-[520px]"
+          >
+            <motion.img
+              src="/algo2.png"
+              alt="DSA Visualizer Preview"
+              variants={imageVariants}
+              className="absolute right-[-120px] bottom-[-60px] w-[450px] sm:w-[500px] lg:w-[550px] h-[260px] sm:h-[290px] rotate-[-19deg] pointer-events-none z-0 rounded-2xl"
+            />
+
             <motion.div
-              variants={cardVariants}
-              className="bg-[#f1ede4] rounded-[28px] p-10 relative overflow-hidden flex flex-col min-h-[520px]"
+              variants={contentVariants}
+              className="relative z-10 max-w-[480px] pb-[200px] sm:pb-[220px]"
             >
-              <motion.img
-                src="/algo2.png"
-                alt="DSA Visualizer Preview"
-                variants={imageVariants}
-                className="absolute right-[-100px] bottom-[-50px] w-[550px] h-[290px] rotate-[-19deg] pointer-events-none z-0 rounded-2xl"
-              />
-
-              <motion.div
-                variants={contentVariants}
-                className="relative z-10 max-w-[480px] pb-[220px]"
+              <motion.h3
+                variants={itemVariants}
+                className="text-[22px] sm:text-[24px] lg:text-[26px] font-semibold text-[#2d2b26] mb-3"
               >
-                <motion.h3
-                  variants={itemVariants}
-                  className="text-[26px] font-semibold text-[#2d2b26] mb-3"
-                >
-                  DSA Visualizer Platform
-                </motion.h3>
+                DSA Visualizer Platform
+              </motion.h3>
 
-                <motion.p
-                  variants={itemVariants}
-                  className="text-[#4d4a43] text-[16px] leading-[2.1]"
-                >
-                  A hands-on data structures and algorithms visualizer that breaks down
-                  complex concepts into clear, step-by-step animations. Designed to help
-                  learners intuitively understand how algorithms operate internally,
-                  including state changes, traversal logic, and time complexity behavior.
-                </motion.p>
-              </motion.div>
+              <motion.p
+                variants={itemVariants}
+                className="text-[#4d4a43] text-[15px] sm:text-[16px] leading-[2.1]"
+              >
+                A hands-on data structures and algorithms visualizer that breaks
+                down complex concepts into clear, step-by-step animations.
+                Designed to help learners intuitively understand internal
+                algorithm behavior, traversal logic, and time complexity.
+              </motion.p>
             </motion.div>
-
+          </motion.div>
 
         </motion.div>
       </div>
