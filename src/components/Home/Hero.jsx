@@ -110,7 +110,7 @@ const Hero = () => {
           transition={{ delay: 0.8, duration: 0.75, ease: "easeOut" }}
         >
           <img
-            src="/boku2.jpeg"
+            src="/profile.png"
             alt="Profile"
             className="w-[220px] h-[220px] sm:w-[260px] sm:h-[260px] lg:w-[320px] lg:h-[320px] rounded-full object-cover bg-gradient-to-br from-[#d6c9a3] to-[#bba36a] shadow-[0_40px_80px_rgba(0,0,0,0.15)] mb-6 lg:mr-10"
           />
