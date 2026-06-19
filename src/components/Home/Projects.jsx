@@ -249,14 +249,6 @@ const Projects = () => {
                 to surface process insights and project knowledge instantly.
               </motion.p>
 
-              <motion.div
-                variants={itemVariants}
-                className="mt-5 flex flex-col gap-2 text-[14px] sm:text-[15px]"
-              >
-                <span className="inline-flex items-center gap-2 bg-[#ece8df] text-[#6b5c3d] text-[13px] font-medium px-3 py-1 rounded-full w-fit">
-                  Prototype · No live link
-                </span>
-              </motion.div>
             </motion.div>
           </motion.div>
 
