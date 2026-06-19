@@ -43,7 +43,7 @@ const Hero = () => {
           <div className="flex flex-col">
             <motion.div
               variants={itemVariants}
-              className="font-bold text-[#2d2b26] text-[30px] sm:text-[36px] lg:text-[45px] leading-tight"
+              className="font-bold text-[#6b5c3d] text-[30px] sm:text-[36px] lg:text-[45px] leading-tight"
             >
               Hey! I’m Anant —
             </motion.div>
@@ -67,7 +67,7 @@ const Hero = () => {
             variants={itemVariants}
             className="max-w-[520px] mt-4 mx-auto lg:mx-0"
           >
-            <p className="text-[16px] sm:text-[17px] lg:text-[18px] leading-[1.7] text-[#4d4a43]">
+            <p className="text-[16px] sm:text-[17px] lg:text-[18px] leading-[1.7] text-[#2d2b26]">
               I design and develop modern web applications focused on performance,
               reliability, and clean user experience — from intuitive front-ends
               to robust back-end systems.
@@ -112,7 +112,7 @@ const Hero = () => {
           <img
             src="/profile.png"
             alt="Profile"
-            className="w-[220px] h-[220px] sm:w-[260px] sm:h-[260px] lg:w-[320px] lg:h-[320px] rounded-full object-cover bg-gradient-to-br from-[#d6c9a3] to-[#bba36a] shadow-[0_40px_80px_rgba(0,0,0,0.15)] mb-6 lg:mr-10 ring-4 ring-[#c8b99a] ring-offset-4 ring-offset-[#faf9f6]"
+            className="w-[220px] h-[220px] sm:w-[260px] sm:h-[260px] lg:w-[320px] lg:h-[320px] rounded-full object-cover bg-gradient-to-br from-[#d6c9a3] to-[#bba36a] shadow-[0_40px_80px_rgba(0,0,0,0.15)] mb-6 lg:mr-10"
           />
 
           <div className="text-center lg:mr-10">

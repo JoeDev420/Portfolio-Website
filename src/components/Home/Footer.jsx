@@ -64,7 +64,15 @@ const Footer = () => {
           variants={itemVariants}
           className="text-gray-500 text-center sm:text-right"
         >
-          Built with <span className="font-medium">React 19</span>
+          Built with{" "}
+          <span className="inline-flex items-center gap-1 font-medium">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              alt="React"
+              className="w-4 h-4"
+            />
+            React 19
+          </span>
         </motion.div>
       </motion.div>
     </footer>

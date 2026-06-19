@@ -46,22 +46,12 @@ const Projects = () => {
     >
       <div className="w-[90%] max-w-[1300px]">
 
-        <motion.span
-          initial={{ opacity: 0, y: 12 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
-          viewport={{ once: true }}
-          className="block text-[11px] sm:text-[12px] tracking-[0.25em] font-medium text-[#9b927e] mb-3 text-center lg:text-left"
-        >
-          02 · PROJECTS
-        </motion.span>
-
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="text-[28px] sm:text-[32px] lg:text-[35px] tracking-[0.15em] text-black font-medium mb-10 lg:mb-12 text-center lg:text-left"
+          className="text-[28px] sm:text-[32px] lg:text-[35px] tracking-[0.15em] text-black font-semibold mb-10 lg:mb-12 text-center lg:text-left"
         >
           PROJECTS
         </motion.h2>
@@ -78,7 +68,7 @@ const Projects = () => {
             variants={cardVariants}
             whileHover={{ y: -6 }}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            className="bg-[#f1ede4] rounded-[28px] p-6 sm:p-8 lg:p-10 relative overflow-hidden flex flex-col min-h-[480px] sm:min-h-[520px]"
+            className="bg-[#e8e0d0] rounded-[28px] p-6 sm:p-8 lg:p-10 relative overflow-hidden flex flex-col min-h-[480px] sm:min-h-[520px]"
           >
             <motion.img
               src="/mohit.png"
@@ -100,7 +90,7 @@ const Projects = () => {
 
               <motion.p
                 variants={itemVariants}
-                className="text-[#4d4a43] text-[15px] sm:text-[16px] leading-[2.1] sm:leading-[2.3]"
+                className="text-[#2d2b26] text-[15px] sm:text-[16px] leading-[2.1] sm:leading-[2.3]"
               >
                 Built and deployed a full-stack AI-powered resume builder that
                 analyzes resumes for ATS compatibility and enhances them using
@@ -158,7 +148,7 @@ const Projects = () => {
 
               <motion.p
                 variants={itemVariants}
-                className="text-[#4d4a43] text-[15px] sm:text-[16px] leading-[2.1]"
+                className="text-[#2d2b26] text-[15px] sm:text-[16px] leading-[2.1]"
               >
                 A production-ready ecommerce website with authentication,
                 product catalog, cart & checkout flow, secure payments, and
@@ -215,13 +205,58 @@ const Projects = () => {
 
               <motion.p
                 variants={itemVariants}
-                className="text-[#4d4a43] text-[15px] sm:text-[16px] leading-[2.1]"
+                className="text-[#2d2b26] text-[15px] sm:text-[16px] leading-[2.1]"
               >
                 A hands-on data structures and algorithms visualizer that breaks
                 down complex concepts into clear, step-by-step animations.
                 Designed to help learners intuitively understand internal
                 algorithm behavior, traversal logic, and time complexity.
               </motion.p>
+            </motion.div>
+          </motion.div>
+
+          <motion.div
+            variants={cardVariants}
+            whileHover={{ y: -6 }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            className="bg-[#f1ede4] rounded-[28px] p-6 sm:p-8 lg:p-10 relative overflow-hidden flex flex-col min-h-[480px] sm:min-h-[520px]"
+          >
+            <motion.img
+              src="/sap.png"
+              alt="SAP Assistant Preview"
+              variants={imageVariants}
+              className="absolute right-[-120px] bottom-[-60px] w-[450px] sm:w-[500px] lg:w-[550px] h-[260px] sm:h-[290px] rotate-[-19deg] pointer-events-none z-0 rounded-2xl"
+            />
+
+            <motion.div
+              variants={contentVariants}
+              className="relative z-10 max-w-[480px] pb-[200px] sm:pb-[220px]"
+            >
+              <motion.h3
+                variants={itemVariants}
+                className="text-[22px] sm:text-[24px] lg:text-[26px] font-semibold text-[#2d2b26] mb-3"
+              >
+                SAP Knowledge Assistant
+              </motion.h3>
+
+              <motion.p
+                variants={itemVariants}
+                className="text-[#2d2b26] text-[15px] sm:text-[16px] leading-[2.1]"
+              >
+                Built a RAG-powered assistant that lets users query SAP MM, FICO,
+                and SD documentation through natural language. Combines LLM-based
+                retrieval with semantic search and structured document intelligence
+                to surface process insights and project knowledge instantly.
+              </motion.p>
+
+              <motion.div
+                variants={itemVariants}
+                className="mt-5 flex flex-col gap-2 text-[14px] sm:text-[15px]"
+              >
+                <span className="inline-flex items-center gap-2 bg-[#ece8df] text-[#6b5c3d] text-[13px] font-medium px-3 py-1 rounded-full w-fit">
+                  Prototype · No live link
+                </span>
+              </motion.div>
             </motion.div>
           </motion.div>
 

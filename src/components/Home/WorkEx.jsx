@@ -32,22 +32,12 @@ const WorkEx = () => {
 
       <div className="w-full flex justify-center">
         <div className="w-[90%] max-w-[1300px]">
-          <motion.span
-            initial={{ opacity: 0, y: 12 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-            viewport={{ once: true }}
-            className="block text-[11px] sm:text-[12px] tracking-[0.25em] font-medium text-[#9b927e] mb-3"
-          >
-            03 · EXPERIENCE
-          </motion.span>
-
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="text-[28px] sm:text-[32px] lg:text-[35px] tracking-[0.15em] text-black font-medium"
+            className="text-[28px] sm:text-[32px] lg:text-[35px] tracking-[0.15em] text-black font-semibold"
           >
             WORK EXPERIENCE
           </motion.p>
@@ -87,12 +77,11 @@ const WorkEx = () => {
             </div>
           </motion.div>
 
-          <motion.p
-            variants={itemVariants}
-            className="text-[#8a8373] text-[15px] mb-8"
-          >
-            2024 · Remote
-          </motion.p>
+          <motion.div variants={itemVariants} className="mb-8">
+            <span className="inline-flex items-center gap-2 bg-[#ece8df] text-[#6b5c3d] text-[13px] font-medium px-3 py-1 rounded-full">
+              2025 · On-site · 3 months
+            </span>
+          </motion.div>
 
           <motion.p
             variants={itemVariants}
