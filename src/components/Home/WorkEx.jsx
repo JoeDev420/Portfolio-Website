@@ -30,15 +30,29 @@ const WorkEx = () => {
   return (
     <div className="bg-[#faf9f6]">
 
-      <motion.p
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        viewport={{ once: true }}
-        className="text-[35px] tracking-[0.15em] text-black font-medium ml-27"
-      >
-        WORK EXPERIENCE
-      </motion.p>
+      <div className="w-full flex justify-center">
+        <div className="w-[90%] max-w-[1300px]">
+          <motion.span
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="block text-[11px] sm:text-[12px] tracking-[0.25em] font-medium text-[#9b927e] mb-3"
+          >
+            03 · EXPERIENCE
+          </motion.span>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="text-[28px] sm:text-[32px] lg:text-[35px] tracking-[0.15em] text-black font-medium"
+          >
+            WORK EXPERIENCE
+          </motion.p>
+        </div>
+      </div>
 
       <section className="w-full flex justify-center py-25">
 

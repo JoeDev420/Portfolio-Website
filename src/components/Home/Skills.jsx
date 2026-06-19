@@ -78,6 +78,16 @@ const Skills = () => {
     <section className="w-full bg-[#faf9f6] flex justify-center py-12 sm:py-16">
       <div className="w-[90%] max-w-[1300px]">
 
+        <motion.span
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="block text-[11px] sm:text-[12px] tracking-[0.25em] font-medium text-[#9b927e] mb-3 text-center lg:text-left"
+        >
+          01 · STACK
+        </motion.span>
+
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -109,7 +119,7 @@ const Skills = () => {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="flex items-center gap-4 bg-[#f3efe6] rounded-2xl px-4 py-5 shadow-sm hover:shadow-md transition"
+              className="flex items-center gap-4 bg-[#f3efe6] rounded-2xl px-4 py-5 shadow-sm hover:shadow-md hover:border hover:border-[#c8b99a] border border-transparent transition"
             >
               <div className="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center bg-white rounded-xl shadow">
                 <img

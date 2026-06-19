@@ -112,7 +112,7 @@ const Hero = () => {
           <img
             src="/profile.png"
             alt="Profile"
-            className="w-[220px] h-[220px] sm:w-[260px] sm:h-[260px] lg:w-[320px] lg:h-[320px] rounded-full object-cover bg-gradient-to-br from-[#d6c9a3] to-[#bba36a] shadow-[0_40px_80px_rgba(0,0,0,0.15)] mb-6 lg:mr-10"
+            className="w-[220px] h-[220px] sm:w-[260px] sm:h-[260px] lg:w-[320px] lg:h-[320px] rounded-full object-cover bg-gradient-to-br from-[#d6c9a3] to-[#bba36a] shadow-[0_40px_80px_rgba(0,0,0,0.15)] mb-6 lg:mr-10 ring-4 ring-[#c8b99a] ring-offset-4 ring-offset-[#faf9f6]"
           />
 
           <div className="text-center lg:mr-10">

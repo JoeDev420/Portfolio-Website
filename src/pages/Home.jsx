@@ -118,9 +118,13 @@ const Home = () => {
 
       {/* PAGE SECTIONS */}
       <Hero />
+      <div className="flex justify-center"><hr className="w-[90%] border-t border-[#e8e3d8]" /></div>
       <Skills />
+      <div className="flex justify-center"><hr className="w-[90%] border-t border-[#e8e3d8]" /></div>
       <Projects />
+      <div className="flex justify-center"><hr className="w-[90%] border-t border-[#e8e3d8]" /></div>
       <WorkEx />
+      <div className="flex justify-center"><hr className="w-[90%] border-t border-[#e8e3d8]" /></div>
       <Bio />
       <Footer />
 

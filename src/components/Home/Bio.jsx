@@ -63,7 +63,7 @@ const Bio = () => {
             variants={itemVariants}
             className="text-[#d6d1c4] text-[15px] sm:text-[16px] leading-[1.7] mb-5"
           >
-            I’m a full-stack developer who values clarity over flash, and structure
+            I’m an AI-Engineer who values clarity over flash, and structure
             over noise.
           </motion.p>
 

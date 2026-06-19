@@ -46,6 +46,16 @@ const Projects = () => {
     >
       <div className="w-[90%] max-w-[1300px]">
 
+        <motion.span
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="block text-[11px] sm:text-[12px] tracking-[0.25em] font-medium text-[#9b927e] mb-3 text-center lg:text-left"
+        >
+          02 · PROJECTS
+        </motion.span>
+
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -66,6 +76,8 @@ const Projects = () => {
 
           <motion.div
             variants={cardVariants}
+            whileHover={{ y: -6 }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
             className="bg-[#f1ede4] rounded-[28px] p-6 sm:p-8 lg:p-10 relative overflow-hidden flex flex-col min-h-[480px] sm:min-h-[520px]"
           >
             <motion.img
@@ -122,6 +134,8 @@ const Projects = () => {
 
           <motion.div
             variants={cardVariants}
+            whileHover={{ y: -6 }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
             className="bg-[#f1ede4] rounded-[28px] p-6 sm:p-8 lg:p-10 relative overflow-hidden flex flex-col min-h-[480px] sm:min-h-[520px]"
           >
             <motion.img
@@ -177,6 +191,8 @@ const Projects = () => {
 
           <motion.div
             variants={cardVariants}
+            whileHover={{ y: -6 }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
             className="bg-[#f1ede4] rounded-[28px] p-6 sm:p-8 lg:p-10 relative overflow-hidden flex flex-col min-h-[480px] sm:min-h-[520px]"
           >
             <motion.img
