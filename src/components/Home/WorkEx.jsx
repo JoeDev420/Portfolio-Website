@@ -58,7 +58,7 @@ const WorkEx = () => {
               </div>
               <div className="flex flex-col">
                 <h2 className="text-[#2d2b26] text-[28px] font-semibold leading-tight">
-                  AI Engineer Intern
+                  AI Engineer 
                 </h2>
                 <span className="text-[#8a8373] text-[14px] tracking-wide">
                   CoreOps.ai
@@ -68,7 +68,7 @@ const WorkEx = () => {
 
             <motion.div variants={itemVariants} className="mb-8">
               <span className="inline-flex items-center gap-2 bg-[#ece8df] text-[#6b5c3d] text-[13px] font-medium px-3 py-1 rounded-full">
-                2025 · On-site · 3 months
+                2026 · On-site · 3 months
               </span>
             </motion.div>
 
